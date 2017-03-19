@@ -106,6 +106,13 @@ class ViewController: UIViewController {
         
     }
     
+    @IBAction func onPressdClear(_ sender: Any) {
+        
+        outputLabel.text = "0"
+        
+        processOperation(operation: .Empty)
+    }
+    
     func processOperation(operation: Operation) {
         
         
